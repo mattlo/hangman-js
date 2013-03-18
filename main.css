@@ -1,0 +1,123 @@
+/* YUI 3.9.0 (build 5827) Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+html {
+	background: #fff;
+	font-family: arial, helvetica, sans-serif;
+}
+
+html, body {
+	min-width: 820px;
+}
+
+.hangman-game {
+	overflow: hidden;
+}
+
+.word-visual {
+	min-width: 500px;
+	float: left;
+}
+
+.word-visual .word {
+	width: 500px;
+	overflow: hidden;
+}
+
+.word + .word {
+	padding-top: 20px;
+}
+
+.word-visual .word li {
+	float: left;
+	margin-right: 5px;
+	border-bottom: solid 2px #333;
+	font: bold 16px/20px arial, helvetica, sans-serif;
+	width: 20px;
+	height: 22px;
+	text-align: center;
+}
+
+.hangman-visual {
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+
+.hangman-visual.state-0 {
+	background: url(images/0.jpg);
+}
+
+.hangman-visual.state-1 {
+	background: url(images/1.jpg);
+}
+
+.hangman-visual.state-2 {
+	background: url(images/2.jpg);
+}
+
+.hangman-visual.state-3 {
+	background: url(images/3.jpg);
+}
+
+.hangman-visual.state-4 {
+	background: url(images/4.jpg);
+}
+
+.hangman-visual.state-5 {
+	background: url(images/5.jpg);
+}
+
+.hangman-game + .letter-choices {
+	border-top: solid 1px #ccc;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.letter-choices {
+	overflow: hidden;
+	padding-left: 20px;
+}
+
+.letter-choices li {
+	float: left;
+	padding: 0 10px 10px 0;
+}
+
+.letter-choices a {
+	width: 24px;
+	height: 24px;
+	font: 14px/24px arial, helvetica, sans-serif;
+	color: #666;
+	text-shadow: 0 1px #fff;
+	background: #f1f1f1;
+	border: solid 1px #aaa;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.letter-choices a:hover {
+	color: #0077bc;
+	border: solid 1px #999;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.letter-choices a.picked {
+	color: #ccc;
+	border: solid 1px #ccc;
+	cursor: default;
+}
+
+.letter-choices a.picked:hover {
+	color: #ccc;
+	border: solid 1px #ccc;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.game-in-progress {
+	display: none;
+}

@@ -6,7 +6,29 @@
 		<link rel="stylesheet" type="text/css" href="main.css" />
 	</head>
 	<body>
+		
+		<div class="choose-difficulty">
+			<select>
+				<option value="-1">Choose Difficulty</option>
+				<option value="0">Easy</option>
+				<option value="1">Intermediate</option>
+				<option value="2">Hard</option>
+			</select>
+		</div>
+		
+		<div class="game-in-progress">
+		
+			<div class="hangman-game">
+				<div class="hangman-visual"></div>
+				<div class="word-visual"></div>
+			</div>
+
+			<ul class="letter-choices"></ul>
+			
+		</div>
+		
 		<script src="jquery.min.js"></script>
 		<script src="main.js"></script>
+		<script src="init.js"></script>
 	</body>
 </html>
